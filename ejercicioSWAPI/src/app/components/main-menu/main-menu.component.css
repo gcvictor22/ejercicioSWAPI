@@ -1,0 +1,87 @@
+body, html, .dark-box{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(https://sm.ign.com/ign_latam/screenshot/default/deathstar_6sce.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-box{
+    width: 100%;
+}
+
+.dark-box{
+    background-color: black;
+    opacity: 80%;
+}
+
+.container-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    margin: 40px;
+    border: 2px solid white;
+}
+
+#titulo{
+    width: 100%;
+    margin-top: 0;
+    color: yellow;
+    text-align: center;
+    font-family: 'starFont', verdana, sans-serif;
+    letter-spacing: 5px;
+}
+
+.personajes{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/character.jpg);
+    background-size: contain;
+}
+
+.species{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/species.jpg);
+    background-size: contain;
+}
+
+.vehicles{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/vehicles.jpg);
+    background-size: contain;
+}
+
+.starships{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/starships.jpg);
+    background-size: contain;
+}
+
+.films{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/films.jpg);
+    background-size: contain;
+}
+
+.planets{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/planets.jpg);
+    background-size: contain;
+}
+
+.personajes, .species, .vehicles, .starships, .films, .planets{
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.personajes:hover, .species:hover, .planets:hover, .vehicles:hover, .starships:hover, .films:hover {
+    transform: scale(1.1);
+}
+
+@font-face {
+    font-family: 'starFont';
+    src: url(../../star_jedi/starjedi/Starjedi.ttf);
+}
