@@ -5,6 +5,12 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
 const routes: Routes = [
   {path: 'inicio', component: MainMenuComponent},
+  {path: 'personajes', component: MainMenuComponent},
+  {path: 'films', component: MainMenuComponent},
+  {path: 'species', component: MainMenuComponent},
+  {path: 'starships', component: MainMenuComponent},
+  {path: 'vehicles', component: MainMenuComponent},
+  {path: 'planets', component: MainMenuComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
