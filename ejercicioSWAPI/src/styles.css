@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body, .dark-box {width: 100%; height: 100%; }
 
 body{
     background-image: url(https://sm.ign.com/ign_latam/screenshot/default/deathstar_6sce.jpg);
