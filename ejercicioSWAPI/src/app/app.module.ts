@@ -11,6 +11,7 @@ import { CharacterComponent } from './components/characters/characters.component
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SpeciesComponent } from './components/species/species.component';
+import { PlanetsComponent } from './components/planets/planets.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SpeciesComponent } from './components/species/species.component';
     PageNotFoundComponent,
     MainMenuComponent,
     CharacterComponent,
-    SpeciesComponent
+    SpeciesComponent,
+    PlanetsComponent
   ],
   imports: [
     BrowserModule,

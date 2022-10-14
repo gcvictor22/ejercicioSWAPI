@@ -15,7 +15,7 @@ export class SpeciesService {
     return this.http.get<SpeciesResponse>(`${API_BASE_URL}/species/?page=${numeroPagina}`)
   }
 
-  public getPeople(id: string) {
+  public getSpecie(id: string) {
     return this.http.get(`${API_BASE_URL}/species`)
   }
 }
