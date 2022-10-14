@@ -8,13 +8,15 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MaterialImportsModule } from './material-imports/material-imports.module';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { CharactersComponent } from './components/characters/characters.component';
+import { FilmsComponent } from './components/films/films.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     CharactersComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    FilmsComponent,
   ],
   imports: [
     BrowserModule,
