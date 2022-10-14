@@ -34,4 +34,5 @@ export class SpeciesComponent implements OnInit {
   counter(){
     return new Array(this.numPages);
   }
+  
 }
