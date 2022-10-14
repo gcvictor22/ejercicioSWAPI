@@ -1,0 +1,94 @@
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(https://wallpapertag.com/wallpaper/full/7/4/d/146610-large-star-wars-star-background-1920x1080.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-box{
+    width: 100%;
+}
+
+.container-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    margin: 40px;
+    border: 2px solid white;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+#titulo{
+    width: 100%;
+    margin-top: 0;
+    color: yellow;
+    text-align: center;
+    font-family: 'starFont', verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.personajes{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/character.jpg);
+    background-size: contain;
+}
+
+.species{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/species.jpg);
+    background-size: contain;
+}
+
+.vehicles{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/vehicles.jpg);
+    background-size: contain;
+}
+
+.starships{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/starships.jpg);
+    background-size: contain;
+}
+
+.films{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/films.jpg);
+    background-size: contain;
+}
+
+.planets{
+    background-image: url(https://starwars-visualguide.com/assets/img/categories/planets.jpg);
+    background-size: contain;
+}
+
+.personajes, .species, .vehicles, .starships, .films, .planets{
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.personajes:hover, .species:hover, .planets:hover, .vehicles:hover, .starships:hover, .films:hover {
+    transform: scale(1.1);
+}
+
+@font-face {
+    font-family: 'starFont';
+    src: url(../../star_jedi/starjedi/Starjedi.ttf);
+}
+
+.atext{
+    width: 100%;
+    background-color: black;
+    font-family: 'starFont';
+    text-align: center;
+    color: yellow;
+    margin-top: 150px;
+    letter-spacing: 1px;
+}
