@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CharacterComponent } from './components/characters/characters.component';
+import { CreditsComponent } from './components/credits/credits.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PlanetsComponent } from './components/planets/planets.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'starships', component: MainMenuComponent},
   {path: 'vehicles', component: MainMenuComponent},
   {path: 'planets', component: PlanetsComponent},
+  {path: 'credits', component: CreditsComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];

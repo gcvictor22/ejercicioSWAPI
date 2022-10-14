@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SpeciesComponent } from './components/species/species.component';
 import { PlanetsComponent } from './components/planets/planets.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PlanetsComponent } from './components/planets/planets.component';
     MainMenuComponent,
     CharacterComponent,
     SpeciesComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,
