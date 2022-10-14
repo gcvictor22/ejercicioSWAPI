@@ -10,13 +10,15 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { CharacterComponent } from './components/characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SpeciesComponent } from './components/species/species.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     MainMenuComponent,
-    CharacterComponent
+    CharacterComponent,
+    SpeciesComponent
   ],
   imports: [
     BrowserModule,

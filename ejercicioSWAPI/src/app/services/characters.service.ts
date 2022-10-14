@@ -7,7 +7,7 @@ const API_BASE_URL = 'https://swapi.dev/api'
 @Injectable({
   providedIn: 'root'
 })
-export class PeopleServiceService {
+export class CharactersService {
 
   constructor(private http: HttpClient) { }
 
