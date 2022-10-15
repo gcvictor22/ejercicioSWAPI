@@ -1,108 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-        <a routerLink="/inicio">Volver</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <a routerLink="/inicio">Volver</a>
+  </div>
+  <p id="start">Hace poco tiempo, en una clase de Desarrollo de Interfaces&hellip;</p>
+
+  <h1>STAR WARS<sub>Ejercicio SWAPI</sub></h1>
+
+  <div id="titles">
+    <div id="titlecontent">
+      <p class="center">
+        EPISODIO SWAPI II<br />
+        A NEW HOPE FOR ANGULAR
+      </p>
+
+      <p>Un periodo de muchas horas libres.</p>
+
+      <p>
+        ¿Qué es esta página?
+      </p>
+
+      <p>
+        ¿Tiene problemas para recordar nombres, pero eres excelente para recordar caras? Nosotros también. Es por eso
+        que hemos creado
+        esta aplicación web. Todo se basa en colocar el ratón sobre una tarjeta, por lo que si está interesado en ver
+        todos los personajes de
+        las películas de Star Wars, haga clic en la categoría de personajes. Después de eso, simplemente apunte a
+        cualquier imagen para obtener más información sobre las características físicas de ese personaje, películas
+        relacionadas, planetas, vehículos, etc.
+
+      </p>
+
+      <p>
+        ¿Por qué hay información desconocida?
+      </p>
+
+      <p>
+        Esta aplicación utiliza la API de Star Wars, por lo que la información que se muestra en esta aplicación se
+        actualizará a medida que se actualice la API. Haremos otras actualizaciones aquí y allá, así que vuelva a
+        consultar
+        con frecuencia.
+      </p>
+
+      <p>
+        ¿Has encontrado algún bug o una idea para mejorar?
+      </p>
+
+      <p>
+        Me la pela, este ejercicio no esta pensado para ver como trabajamos el código, esta pensado para ver como
+        trabajamos
+        con el compañero, con git sobre todo. Si hay cualquier fallo es cosa del <a
+          href="https://www.codepen.io">codepen.io</a>.
+        De ahi hemos sacado la página de error 404 y esta página.
+      </p>
+
+      <p>
+        Trabajo realizado por Antonio Montero y Víctor González para la asignatura de desarrollo de interfaces de 2ºDAM
+        del
+        colegio Salesianos de San Pedro.
+      </p>
+
+      <p>
+        SALVE, DON BOSCO SANTO, JOVEN DE CORAZÓN.
+        MIRA TODO EL QUEBRANTO DE UN MUNDO SIN AMOR.
+
+        Juventudes que caminan sin saber adónde van,
+        juventudes tan heridas: sin fe, sin paz, sin luz ni amor.
+        Juan Bosco, oye nuestra voz.
+        SALVE, DON BOSCO SANTO, JOVEN DE CORAZÓN.
+        MIRA TODO EL QUEBRANTO DE UN MUNDO SIN AMOR.
+
+        Si supieras cuántas veces nos trataron de vencer,
+        si supieras cómo duele el ver crueldad, rencor, pasión.
+        Juan Bosco, ven y ayúdanos.
+        SALVE, DON BOSCO SANTO, JOVEN DE CORAZÓN.
+        MIRA TODO EL QUEBRANTO DE UN MUNDO SIN AMOR.
+
+        Ven a ver cómo luchamos con esfuerzo y decisión,
+        ven a ver cómo tratamos de hacer cambiar el mundo de hoy
+        Juan Bosco, ven y ayúdanos!
+        SALVE, DON BOSCO SANTO, JOVEN DE CORAZÓN.
+        MIRA TODO EL QUEBRANTO DE UN MUNDO SIN AMOR.
+      </p>
     </div>
-    <p id="start">Hace poco tiempo, en una clase de Desarrollo de Interfaces&hellip;</p>
+  </div>
+</body>
 
-    <h1>STAR WARS<sub>Ejercicio SWAPI</sub></h1>
-
-    <div id="titles">
-      <div id="titlecontent">
-        <p class="center">
-          EPISODIO SWAPI II<br />
-          A NEW HOPE FOR CSS3
-        </p>
-
-        <p>It is a period of vendor war.</p>
-
-        <p>
-          This is a demonstration of Star Wars-style scrolling 3D titles in
-          CSS3. It possibly has no practical purpose whatsoever but it looks
-          great and you can impress your friends.
-        </p>
-
-        <p>
-          Before movie-buffs start ranting, I realize Star Wars wasn't the first
-          to use crawling 3D titles, but few of you will remember the Flash
-          Gordon series or the 1936 adaption of HG Wells' "Things to Come".
-        </p>
-
-        <p>
-          Also, by mentioning "Star Wars", everyone will understand what I mean.
-          And I'll receive several thousand more visits.
-        </p>
-
-        <p>
-          The scrolling titles work well in Chrome, Safari and Firefox. Opera
-          doesn't implement 3D transforms yet, but the text will scroll. IE
-          users receive a blank page. A shame, but IE10 should support it.
-        </p>
-
-        <p>
-          So how does it work? Well, it's fairly simple. We have an outer
-          absolute DIV (#titles) which is rotated along the X-axis using
-          perspective to give the impression of depth. The same DIV also has an
-          :after psuedo-element which applies a linear gradient so the text
-          appears to fade out.
-        </p>
-
-        <p>
-          Inside, we have another absolutely-positioned DIV which contains the
-          text (#titlecontent). The top is set to 100% to ensure it starts
-          off-screen then uses CSS3 animation to move it upward over time. No
-          JavaScript is required.
-        </p>
-
-        <p>
-          You will probably need to adjust the movement amount and timing
-          depending on the quantity of text you want to show. The 3D depth can
-          also be tweaked in the #titles declaration.
-        </p>
-
-        <p>All the code is contained in this single HTML file&hellip;</p>
-
-        <p class="center">View the source, Luke!</p>
-
-        <p>Sorry. Couldn't resist it.</p>
-
-        <p>
-          You're welcome to use this demonstration code in your own sites.
-          Please link back to the original article at:
-        </p>
-
-        <p class="center">
-          <a href="http://www.sitepoint.com/css3-starwars-scrolling-text/"
-            >sitepoint.com/<br />css3-starwars-scrolling-text/</a
-          >
-        </p>
-
-        <p>
-          and give me a shout on Twitter
-          <a href="https://twitter.com/craigbuckler">@craigbuckler</a> &ndash;
-          I'd love to see how you use and abuse it!
-        </p>
-
-        <p>
-          Finally, Han shot first and the original, unadulterated movies remain
-          the best. Stop fiddling with them, George!
-        </p>
-      </div>
-    </div>
-    <iframe
-      style="visibility: hidden"
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/1KAOq7XX2OY"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
-  </body>
 </html>
