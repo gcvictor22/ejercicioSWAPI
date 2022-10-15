@@ -91,3 +91,13 @@ body{
     margin-top: 150px;
     letter-spacing: 1px;
 }
+
+#botonCreditosMenu{
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'starFont';
+    background-color: yellow;
+    color: black;
+}

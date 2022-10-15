@@ -243,3 +243,13 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+
+#botonCreditosMenu{
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  text-decoration: none;
+  font-family: 'starFont';
+  background-color: yellow;
+  color: #1E1B2D;
+}
