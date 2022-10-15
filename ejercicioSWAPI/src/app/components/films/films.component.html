@@ -1,1 +1,38 @@
-<p>films works!</p>
+<div>    
+    <br>
+    <br>
+    <h1 id="titulo">films · SWAPi</h1>
+    <br>
+    <div  class="botonDisplay">
+      <button *ngFor="let in of counter() ;let i = index" (click)="getFilmPage(i+1)" ngClass="botonesPagina">
+        <span>{{i+1}}</span>
+      </button>
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="display-cards">
+    <div *ngFor="let film of filmList" class="example-5 alternate-card">
+      <div class="wrapper">
+        <img [src]="getFilmUrl(film)" alt="" style="width: 100%;">
+        <div class="data">
+          <div class="content">
+            <h1 class="title"><a href="#">{{film.title}}</a></h1>
+            <h3><u>Descripción</u></h3>
+            <p>
+                Fecha de estreno: {{film.release_date}} cm
+            </p>
+            <p>
+                Director: {{film.director}}
+            </p>
+            <p>
+                Productor/es: {{film.producer}}
+            </p>
+            <p>
+                {{film.opening_crawl}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

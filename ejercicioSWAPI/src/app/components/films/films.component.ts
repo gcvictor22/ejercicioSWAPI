@@ -4,7 +4,7 @@ import { Characters } from 'src/app/interfaces/characters.interface';
 import { Film } from 'src/app/interfaces/film.interface';
 import { FilmsService } from 'src/app/services/films.service';
 
-const URL_IMAGEN = 'https://starwars-visualguide.com/assets/img/films/4.jpg'
+const URL_IMAGEN = 'https://starwars-visualguide.com/assets/img/films/'
 
 @Component({
   selector: 'app-films',
@@ -15,7 +15,7 @@ export class FilmsComponent implements OnInit {
 
   filmList : Film[] = [];
   numPages = 0;
-  slected = false;
+  selected = false;
 
   constructor(private filmService: FilmsService) { }
 
@@ -31,8 +31,8 @@ export class FilmsComponent implements OnInit {
     })
   }
 
-  getFilmUrl(obj: Characters) {
-    let id = obj.url.split('/')[5];
+  getFilmUrl(film: Film) {
+    let id = film.url.split('/')[5];
     return `${URL_IMAGEN}${id}.jpg`
   }
 
