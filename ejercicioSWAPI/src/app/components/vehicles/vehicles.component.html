@@ -1,0 +1,43 @@
+<div>    
+    <a routerLink="/inicio" id="botonCreditosMenu">Go back</a> 
+      <br>
+      <br>
+      <h1 id="titulo">vehicles · SWAPi</h1>
+      <br>
+      <div  class="botonDisplay">
+        <button *ngFor="let in of counter() ;let i = index" (click)="getVehiclePage(i+1)" ngClass="botonesPagina">
+          <span>{{i+1}}</span>
+        </button>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="display-cards">
+      <div *ngFor="let vehicle of vehicleList" class="example-5 alternate-card">
+        <div class="wrapper">
+          <img [src]="getObjetoUrl(vehicle)" alt="" style="width: 100%;">
+          <h1>{{vehicle.name}}</h1>
+          <div class="data">
+            <div class="content">
+              <h1 class="title"><a href="#">{{vehicle.name}}</a></h1>
+              <h3><u>Descripción</u></h3>
+              <p>
+                  Manufacturador: {{vehicle.manufacturer}} cm
+              </p>
+              <p>
+                  Modelo: {{vehicle.model}}
+              </p>
+              <p>
+                Coste en creditos: {{vehicle.cost_in_credits}}
+              </p>
+              <p>
+                  Máxima velocidad: {{vehicle.max_atmosphering_speed}}
+              </p>
+              <p>
+                Pasajeros: {{vehicle.passengers}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

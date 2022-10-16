@@ -15,6 +15,7 @@ import { SpeciesComponent } from './components/species/species.component';
 import { PlanetsComponent } from './components/planets/planets.component';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { CreditsComponent } from './components/credits/credits.component';
+import { VehiclesComponent } from './components/vehicles/vehicles.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CreditsComponent } from './components/credits/credits.component';
     PlanetsComponent,
     StarshipsComponent,
     CreditsComponent,
-    FilmsComponent
+    FilmsComponent,
+    VehiclesComponent
   ],
   imports: [
     BrowserModule,
