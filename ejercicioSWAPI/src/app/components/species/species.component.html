@@ -1,5 +1,5 @@
-<div>    
-  <a routerLink="/inicio" id="botonCreditosMenu">Go back</a> 
+<div>
+  <a routerLink="/inicio" id="botonCreditosMenu">Go back</a>    
     <br>
     <br>
     <h1 id="titulo">characters · SWAPi</h1>
@@ -13,21 +13,21 @@
     <br>
   </div>
   <div class="display-cards">
-    <div *ngFor="let people of peopleListado" class="example-5 alternate-card">
+    <div *ngFor="let specie of speciesListado" class="example-5 alternate-card">
       <div class="wrapper">
-        <img [src]="getObjetoUrl(people)" alt="" style="width: 100%;">
+        <img [src]="getObjetoUrl(specie)" alt="" style="width: 100%;">
         <div class="data">
           <div class="content">
-            <h1 class="title"><a href="#">{{people.name}}</a></h1>
+            <h1 class="title"><a href="#">{{specie.name}}</a></h1>
             <h3><u>Descripción</u></h3>
             <p>
-                Altura: {{people.height}} cm
+                Altura: {{specie.average_height}} cm
             </p>
             <p>
-                Edad: {{people.birth_year}}
+                Edad: {{specie.average_lifespan}}
             </p>
             <p>
-                Género: {{people.gender}}
+                Género: {{specie.language}}
             </p>
           </div>
         </div>

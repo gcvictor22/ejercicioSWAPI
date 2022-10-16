@@ -11,6 +11,9 @@ import { FilmsComponent } from './components/films/films.component';
 import { CharacterComponent } from './components/characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SpeciesComponent } from './components/species/species.component';
+import { PlanetsComponent } from './components/planets/planets.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,11 @@ import { FormsModule } from '@angular/forms';
     PageNotFoundComponent,
     CharacterComponent,
     MainMenuComponent,
-    FilmsComponent,
+    CharacterComponent,
+    SpeciesComponent,
+    PlanetsComponent,
+    CreditsComponent,
+    FilmsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Characters } from 'src/app/interfaces/characters.interface';
-import { PeopleServiceService } from 'src/app/services/characters.service';
+import { CharactersService } from 'src/app/services/characters.service';
 
 const URL_IMAGEN = 'https://starwars-visualguide.com/assets/img/characters/'
 @Component({
@@ -13,7 +13,7 @@ export class CharacterComponent implements OnInit {
   numPages= 0;
   selected=false
 
-  constructor(private peopleService: PeopleServiceService) { }
+  constructor(private peopleService: CharactersService) { }
 
   ngOnInit(): void {
     this.getPeoplePage(1)

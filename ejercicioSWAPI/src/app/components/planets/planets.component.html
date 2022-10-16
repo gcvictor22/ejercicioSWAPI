@@ -1,4 +1,4 @@
-<div>    
+<div>  
   <a routerLink="/inicio" id="botonCreditosMenu">Go back</a> 
     <br>
     <br>
@@ -13,21 +13,21 @@
     <br>
   </div>
   <div class="display-cards">
-    <div *ngFor="let people of peopleListado" class="example-5 alternate-card">
+    <div *ngFor="let planet of planetsListado" class="example-5 alternate-card">
       <div class="wrapper">
-        <img [src]="getObjetoUrl(people)" alt="" style="width: 100%;">
+        <img [src]="getObjetoUrl(planet)" onerror="this.src = '	https://starwars-visualguide.com/assets/img/placeholder.jpg'" alt="" style="width: 100%;">
         <div class="data">
           <div class="content">
-            <h1 class="title"><a href="#">{{people.name}}</a></h1>
+            <h1 class="title"><a href="#">{{planet.name}}</a></h1>
             <h3><u>Descripción</u></h3>
             <p>
-                Altura: {{people.height}} cm
+                Diametro: {{planet.diameter}} m
             </p>
             <p>
-                Edad: {{people.birth_year}}
+                Clima: {{planet.climate}}
             </p>
             <p>
-                Género: {{people.gender}}
+                Habitantes: {{planet.population}}
             </p>
           </div>
         </div>
