@@ -1,0 +1,58 @@
+<div>    
+  <a routerLink="/inicio" id="botonCreditosMenu">Go back</a> 
+    <br>
+    <br>
+    <h1 id="titulo">starships · SWAPi</h1>
+    <br>
+    <div  class="botonDisplay">
+      <button *ngFor="let in of counter() ;let i = index" (click)="getStarshipPage(i+1)" ngClass="botonesPagina">
+        <span>{{i+1}}</span>
+      </button>
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="display-cards">
+    <div *ngFor="let starship of starshipsList" class="example-5 alternate-card">
+      <div class="wrapper">
+        <img [src]="getStarshipPhoto(starship)" onerror= "this.src = 'https://starwars-visualguide.com/assets/img/placeholder.jpg'" alt="" style="width: 100%;">
+        <h1>{{starship.name}}</h1>
+        <div class="data">
+          <div class="content">
+            <h1 class="title"><a href="#">{{starship.name}}</a></h1>
+            <h3><u>Descripción</u></h3>
+            <p>
+                Modelo: ${{starship.model}} 
+            </p>
+            <p>
+                Manufacturador: {{starship.manufacturer}}
+            </p>
+            <p>
+                Clase: {{starship.starship_class}}
+            </p>
+            <p>
+              Coste: {{starship.cost_in_credits}} creditos
+            </p>
+            <p>
+              Velocidad: {{starship.max_atmosphering_speed}} km/h
+            </p>
+            <p>
+              Rating Hyperdrive: {{starship.hyperdrive_rating}}
+            </p>
+            <p>
+              MGLT: {{starship.MGLT}}
+            </p>
+            <p>
+              Longitud: {{starship.length}} m
+            </p>
+            <p>
+              Capacidad de carga: {{starship.cargo_capacity}} tonelada métrica
+            </p>
+            <p>
+              Pasajeros: {{starship.passengers}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
