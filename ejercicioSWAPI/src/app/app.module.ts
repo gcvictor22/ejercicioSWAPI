@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SpeciesComponent } from './components/species/species.component';
 import { PlanetsComponent } from './components/planets/planets.component';
+import { StarshipsComponent } from './components/starships/starships.component';
 import { CreditsComponent } from './components/credits/credits.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CreditsComponent } from './components/credits/credits.component';
     CharacterComponent,
     SpeciesComponent,
     PlanetsComponent,
+    StarshipsComponent,
     CreditsComponent,
     FilmsComponent
   ],
