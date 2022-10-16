@@ -7,6 +7,7 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PlanetsComponent } from './components/planets/planets.component';
 import { SpeciesComponent } from './components/species/species.component';
+import { VehiclesComponent } from './components/vehicles/vehicles.component';
 
 const routes: Routes = [
   {path: 'inicio', component: MainMenuComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path: 'species', component: SpeciesComponent},
   {path: 'films', component: FilmsComponent},
   {path: 'starships', component: MainMenuComponent},
-  {path: 'vehicles', component: MainMenuComponent},
+  {path: 'vehicles', component: VehiclesComponent},
   {path: 'planets', component: PlanetsComponent},
   {path: 'credits', component: CreditsComponent},
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
