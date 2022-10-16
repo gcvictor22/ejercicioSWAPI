@@ -2,10 +2,10 @@
   <a routerLink="/inicio" id="botonCreditosMenu">Go back</a> 
     <br>
     <br>
-    <h1 id="titulo">characters · SWAPi</h1>
+    <h1 id="titulo">films · SWAPi</h1>
     <br>
     <div  class="botonDisplay">
-      <button *ngFor="let in of counter() ;let i = index" (click)="getPeoplePage(i+1)" ngClass="botonesPagina">
+      <button *ngFor="let in of counter() ;let i = index" (click)="getFilmPage(i+1)" ngClass="botonesPagina">
         <span>{{i+1}}</span>
       </button>
     </div>
@@ -13,21 +13,21 @@
     <br>
   </div>
   <div class="display-cards">
-    <div *ngFor="let people of peopleListado" class="example-5 alternate-card">
+    <div *ngFor="let film of filmList" class="example-5 alternate-card">
       <div class="wrapper">
-        <img [src]="getObjetoUrl(people)" alt="" style="width: 100%;">
+        <img [src]="getFilmUrl(film)" alt="" style="width: 100%;">
         <div class="data">
           <div class="content">
-            <h1 class="title"><a href="#">{{people.name}}</a></h1>
+            <h1 class="title"><a href="#">{{film.title}}</a></h1>
             <h3><u>Descripción</u></h3>
             <p>
-                Altura: {{people.height}} cm
+                Fecha de estreno: {{film.release_date}} cm
             </p>
             <p>
-                Edad: {{people.birth_year}}
+                Director: {{film.director}}
             </p>
             <p>
-                Género: {{people.gender}}
+                Productor/es: {{film.producer}}
             </p>
           </div>
         </div>

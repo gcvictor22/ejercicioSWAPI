@@ -95,7 +95,7 @@ h1 {
 .alternate-card {
   float: left;
   padding: 1rem;
-  width: 350px;
+  width: 300px;
 }
 .alternate-card .menu-content {
   margin: 0;
@@ -242,4 +242,14 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+#botonCreditosMenu{
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  text-decoration: none;
+  font-family: 'starFont';
+  background-color: yellow;
+  color: #1E1B2D;
 }
