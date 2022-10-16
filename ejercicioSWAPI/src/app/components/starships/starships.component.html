@@ -15,6 +15,7 @@
     <div *ngFor="let starship of starshipsList" class="example-5 alternate-card">
       <div class="wrapper">
         <img [src]="getStarshipPhoto(starship)" onerror= "this.src = 'https://starwars-visualguide.com/assets/img/placeholder.jpg'" alt="" style="width: 100%;">
+        <h1>{{starship.name}}</h1>
         <div class="data">
           <div class="content">
             <h1 class="title"><a href="#">{{starship.name}}</a></h1>
@@ -29,10 +30,10 @@
                 Clase: {{starship.starship_class}}
             </p>
             <p>
-              Coste: {{starship.cost_in_credits}}
+              Coste: {{starship.cost_in_credits}} creditos
             </p>
             <p>
-              Velocidad: {{starship.max_atmosphering_speed}}
+              Velocidad: {{starship.max_atmosphering_speed}} km/h
             </p>
             <p>
               Rating Hyperdrive: {{starship.hyperdrive_rating}}
@@ -41,10 +42,10 @@
               MGLT: {{starship.MGLT}}
             </p>
             <p>
-              Longitud: {{starship.length}}
+              Longitud: {{starship.length}} m
             </p>
             <p>
-              Capacidad de carga: {{starship.cargo_capacity}}
+              Capacidad de carga: {{starship.cargo_capacity}} tonelada métrica
             </p>
             <p>
               Pasajeros: {{starship.passengers}}

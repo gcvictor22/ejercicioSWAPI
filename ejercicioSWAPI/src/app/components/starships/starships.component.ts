@@ -3,7 +3,7 @@ import { Starship } from 'src/app/interfaces/starship.interface';
 import { StarshipService } from 'src/app/services/starship.service';
 
 
-const URL_IMAGEN = 'https://starwars-visualguide.com/assets/img/planets/'
+const URL_IMAGEN = 'https://starwars-visualguide.com/assets/img/starships/'
 
 @Component({
   selector: 'app-starships',
